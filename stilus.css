@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+}
+body{
+    background-color: gray;
+}
+main {
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: burlywood;
+}
+p{
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+#kepes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#kepes img {
+    width: calc(50% - 10px);
+    max-width: 100%;
+}
+
+@media (max-width: 600px) {
+    #kepes {
+        flex-direction: column;
+        align-items: center;
+    }
+}
